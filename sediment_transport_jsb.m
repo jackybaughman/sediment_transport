@@ -67,7 +67,7 @@ if  (rem(t(i),tplot)==0) % decrease plotting frequency - speed up animation
     figure(1), clf
     plot(x,z*100); % plot topography
     hold on
-    plot(x,zbeam*100); % plot beam
+    plot(x(1:hit),zbeam(1:hit)*100); % plot beam
     axis([0 xmax -0.05*100 0.05*100]) % hold axis constant
     hold off
 
